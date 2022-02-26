@@ -1,92 +1,105 @@
-_MODULES
+# _MODULES
 ========
 
 TG toolbox 2018
 
-____
-Effects	
--------
-###Biquad	
+## what is it ?
+A collection of max modules built by Thomas and improved by Serge
+### syntactic conventions
+each module start with :
+- tg. (thomas original modumlesà
+- cg. (by slm for gadenstatter project)
+- iko. (by slm for maresz project)
+- slm.
+
+### specifications
+Each module should
+- have a functional help file
+- be inside a poly~ (and is muted if not used)
+- has a preset system with explicit parameter names
+- respect the graphic chart for visual coherency
+## Effects Overview
+### Biquad	
 - requires: no external library.	
 
-###Chorus	
+### Chorus	
 	
-###Chromax	
+### Chromax	
 - requires: IRCAM [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library. 
 	
-###Comb	
+### Comb	
 	
-###Compressor	
-- requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.	
-	
+### Compressor	
+- requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.
 
-###Convolution	
+### Convolution	
 
-###FFFbDelay
+### FFFbDelay
 
-###FFTilterSound	
+### FFTilterSound	
 - requires: [cv.jit](http://jmpelletier.com/cvjit/) library.
 
-###Fragulator		
+### Fragulator		
 
-###FreezeKoala		
+### FreezeKoala		
 
-###FreqShift	
+### FreqShift	
 
-###GizmoX4	
+### GizmoX4	
 
-###Gran	
+### Gran	
 - requires: [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library.
 		
-###HarmX4		
+### HarmX4		
 	
-###IanaTo	
-- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton, IRCAM [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library, 
-[UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library, 
-[Percolate](http://music.columbia.edu/percolate/) library,[CNMAT](http://cnmat.berkeley.edu/downloads) library,[Lobects](http://artsites.ucsc.edu/EMS/music/research/lobjects.readme.html) library
- 
+### IanaTo	
+- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton, 
+- IRCAM [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library, 
+- [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library,
+- [Percolate](http://music.columbia.edu/percolate/) library,
+- [CNMAT](http://cnmat.berkeley.edu/downloads) library,
+- [Lobects](http://artsites.ucsc.edu/EMS/music/research/lobjects.readme.html) library
 
-###Munger
-- requires: [Percolate](http://music.columbia.edu/percolate/) Library.	
+### Munger
+- requires: [Percolate](http://music.columbia.edu/percolate/) Library.
 	
-###Psychoirtrist	
-- requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library.	
+### Psychoirtrist	
+- requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library.
+
+### Resonator	
+- requires: [CNMAT](http://cnmat.berkeley.edu/downloads) library.
+
+### Reverb
+
+### Samplor
+- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton
+
+### Spat
+- requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.
 	
-###Resonator	
-- requires: [CNMAT](http://cnmat.berkeley.edu/downloads) library.	
+### SpectralDelay	
+- requires: [CNMAT](http://cnmat.berkeley.edu/downloads) library.
 
-###Reverb		
-
-###Samplor
-- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton.	
-
-###Spat		
-- requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.	
-	
-###SpectralDelay	
-- requires: [CNMAT](http://cnmat.berkeley.edu/downloads) library.	
-
-###SuperVP		
+### SuperVP		
 - requires: IRCAM [SuperVP for Max](http://forumnet.ircam.fr/product/supervp-max/), [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library.
 
-###Texas	
-- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton, [Zsa.Descriptors](http://www.e--j.com/index.php/what-is-zsa-descriptors/).	
+### Texas	
+- requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton, [Zsa.Descriptors](http://www.e--j.com/index.php/what-is-zsa-descriptors/).
 
-###YinRand
-- requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library.	
+### YinRand
+- requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library.
 
-###YinToSin	
+### YinToSin	
 - requires: Ircam [MaxSoundBox](http://forumnet.ircam.fr/product/max-sound-box) library, [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library.
 
-_____
-Tools	
--------
-###_Buffers	
-###_InputsOutputs
-###_Models
-###_Resonators
-###_Samplor
-###_Tools
+## Tools Overview
+
+### _Buffers	
+### _InputsOutputs
+### _Models
+### _Resonators
+### _Samplor
+### _Tools
 
 
 
