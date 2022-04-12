@@ -1,0 +1,35 @@
+{
+	"pattrstorage" : 	{
+		"name" : "EnvFollowPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "init",
+				"data" : 				{
+					"Ingain" : [ -9.593974666210194 ],
+					"Interval" : [ 20.000000000000007 ],
+					"Mode" : [ 0.0 ],
+					"Send" : [ "amp" ],
+					"smooth" : [ 15.434904068233328 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "autowah",
+				"data" : 				{
+					"Ingain" : [ -9.593974666210194 ],
+					"Interval" : [ 20.000000000000007 ],
+					"Mode" : [ 0.0 ],
+					"Send" : [ "amp" ],
+					"smooth" : [ 15.434904068233328 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

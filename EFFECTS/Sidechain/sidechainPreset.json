@@ -1,0 +1,25 @@
+{
+	"pattrstorage" : 	{
+		"name" : "sidechainPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "init",
+				"data" : 				{
+					"1ingain" : [ 10.724409448818903 ],
+					"2ingain" : [ 0.0 ],
+					"Dry/wet" : [ 80.314960629921288 ],
+					"EnvFol" : [ 1.0 ],
+					"InverseSource" : [ 0.0 ],
+					"Outgain" : [ 0.0 ],
+					"ReceiveEnable" : [ 1.0 ],
+					"textedit" : [ "none" ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

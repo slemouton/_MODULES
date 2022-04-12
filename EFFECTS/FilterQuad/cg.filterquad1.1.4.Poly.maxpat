@@ -86,8 +86,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "", "" ],
-					"patching_rect" : [ 20.0, 81.0, 109.0, 20.0 ],
-					"text" : "cg.filterquad1.1.4 #1",
+					"patching_rect" : [ 20.0, 81.0, 116.0, 20.0 ],
+					"text" : "cg.filterquad1.1.1 #1",
 					"varname" : "tg.FreqShift"
 				}
 

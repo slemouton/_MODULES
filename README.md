@@ -7,7 +7,7 @@ TG toolbox 2018
 A collection of max modules built by Thomas and improved by Serge
 ### syntactic conventions
 each module start with :
-- tg. (thomas original modumlesà
+- tg. (thomas original modules
 - cg. (by slm for gadenstatter project)
 - iko. (by slm for maresz project)
 - slm.
@@ -18,6 +18,10 @@ Each module should
 - be inside a poly~ (and is muted if not used)
 - has a preset system with explicit parameter names
 - respect the graphic chart for visual coherency
+
+### todo
+- replace spat by spat5 (compressor, etc.)
+
 ## Effects Overview
 ### Biquad	
 - requires: no external library.	
@@ -31,6 +35,7 @@ Each module should
 	
 ### Compressor	
 - requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.
+- or sn.comp~ by sebastien Naves
 
 ### Convolution	
 
@@ -38,6 +43,9 @@ Each module should
 
 ### FFTilterSound	
 - requires: [cv.jit](http://jmpelletier.com/cvjit/) library.
+
+### Filterquad
+This effect splits the input sound in 4 frequency bands, can be use to give space to a stereo sound.
 
 ### Fragulator		
 
@@ -74,13 +82,18 @@ Each module should
 ### Samplor
 - requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton
 
+### Sidechain
+-controls the volume of a stereo sound by the dynamics of a mono sound
+
 ### Spat
 - requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.
 	
 ### SpectralDelay	
 - requires: [CNMAT](http://cnmat.berkeley.edu/downloads) library.
 
-### SuperVP		
+### SuperVP
+- source filter : cross synthesis
+- cg.sourcefilter is a simplified version (for non-monodic sound files) that does not require fundamental frequency detection		
 - requires: IRCAM [SuperVP for Max](http://forumnet.ircam.fr/product/supervp-max/), [UCSD](http://crca-archive.ucsd.edu/~tapel/software.html) library.
 
 ### Texas	
