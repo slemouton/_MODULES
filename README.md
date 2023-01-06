@@ -7,6 +7,7 @@ TG toolbox 2018
 A collection of max modules built by Thomas and improved by Serge
 ### syntactic conventions
 each module start with :
+
 - tg. (thomas original modules
 - cg. (by slm for gadenstatter project)
 - iko. (by slm for maresz project)
@@ -14,6 +15,7 @@ each module start with :
 
 ### specifications
 Each module should
+
 - have a functional help file
 - be inside a poly~ (and is muted if not used)
 - has a preset system with explicit parameter names
@@ -23,6 +25,12 @@ Each module should
 - replace spat by spat5 (compressor, etc.)
 
 ## Effects Overview
+### Autowah
+create an autowah effect by combinig two modules 
+
+- EnvFollow(envelope detection)
+- Biquad (filter)
+
 ### Biquad	
 - requires: no external library.	
 
@@ -83,7 +91,7 @@ This effect splits the input sound in 4 frequency bands, can be use to give spac
 - requires: [samplor~](http://serge.lemouton.free.fr/maxobjects/index.php?m=08&y=08&entry=entry080828-010735) by Serge Lemouton
 
 ### Sidechain
--controls the volume of a stereo sound by the dynamics of a mono sound
+- controls the volume of a stereo sound by the dynamics of a mono sound
 
 ### Spat
 - requires: IRCAM [Spat](http://forumnet.ircam.fr/product/spat/) library.
