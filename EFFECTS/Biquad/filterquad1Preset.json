@@ -7,11 +7,42 @@
 				"name" : "init",
 				"data" : 				{
 					"Dry/wet" : [ 100.0 ],
+					"Enable1" : [  ],
+					"Enable2" : [  ],
+					"Enable3" : [  ],
+					"Enable4" : [  ],
+					"Enable5" : [  ],
+					"Enable6" : [  ],
+					"Enable7" : [  ],
+					"Enable8" : [  ],
 					"Ingain" : [ 0.0 ],
 					"Outgain" : [ -5.620047494063328 ],
+					"Selection" : [  ],
 					"f1" : [ 800.0 ],
 					"f2" : [ 3000.0 ],
 					"f3" : [ 8000.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"Enable1" : [ 0.0 ],
+					"Enable2" : [ 1.0 ],
+					"Enable3" : [ 0.0 ],
+					"Enable4" : [ 1.0 ],
+					"Enable5" : [ 0.0 ],
+					"Enable6" : [ 0.0 ],
+					"Enable7" : [ 0.0 ],
+					"Enable8" : [ 0.0 ],
+					"Ingain" : [ 0.0 ],
+					"Outgain" : [ -5.620047494063328 ],
+					"Selection" : [ 3.0 ],
+					"f1" : [ 50.0 ],
+					"f2" : [ 100.0 ],
+					"f3" : [ 200.0 ]
 				}
 
 			}
