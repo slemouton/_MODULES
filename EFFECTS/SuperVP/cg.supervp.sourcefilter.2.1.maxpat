@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 436.0, 53.0, 1311.0, 911.0 ],
+		"rect" : [ 295.0, 53.0, 1459.0, 911.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 9.0,
@@ -38,7 +38,48 @@
 		"style" : "",
 		"subpatcher_template" : "JBB_template",
 		"assistshowspatchername" : 0,
+		"title" : "1X",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1254.0, 426.0, 29.5, 19.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1254.0, 389.0, 29.5, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 807.0, 49.0, 29.5, 19.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1245.0, 351.0, 69.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 798.0, 11.0, 69.0, 19.0 ],
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-132",
 					"maxclass" : "number",
@@ -242,7 +283,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 255.0, 5.0, 77.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 4.0, 72.0, 16.0 ],
+					"presentation_rect" : [ 11.0, 4.0, 72.0, 15.0 ],
 					"prototypename" : "M4L.white",
 					"rounded" : 0.0,
 					"text" : "none",
@@ -264,8 +305,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1008,8 +1049,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1346,8 +1387,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1791,8 +1832,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1976,8 +2017,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3348,7 +3389,7 @@
 					"patching_rect" : [ 1335.5, 139.0, 95.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 685.5, 4.5, 95.0, 27.0 ],
-					"text" : "1X_"
+					"text" : "1X"
 				}
 
 			}
@@ -3364,7 +3405,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-86",
-					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "cross1", ",", "cross2", ",", "500formants", ",", "vocal", ",", "(undefined)", ",", "500fenv", ",", "fast", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "vocalfast" ],
+					"items" : [ "()", ",", "<separator>", ",", "(Presets)", ",", "init", ",", "dump", ",", "store", ",", "<separator>", ",", "(Storage)", ",", "client", ",", "storage", ",", "<separator>", ",", "(Bank)", ",", "renum", ",", "clear", ",", "load", ",", "save", ",", "export", ",", "<separator>", ",", "(Recall)", ",", "(undefined)", ",", "cross1", ",", "cross2", ",", "500formants", ",", "vocal", ",", "(undefined)", ",", "500fenv", ",", "fast", ",", "(undefined)", ",", "(undefined)", ",", "10", ",", "vocalfast", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "X1.4.2", ",", "X2.3.1", ",", "X2.4.2", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "(undefined)", ",", "X1.4.3", ",", "X1.4.4" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3596,10 +3637,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1332.5, 393.0, 177.0, 31.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 218, 50, 606, 257 ],
+						"client_rect" : [ 662, 87, 1131, 852 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 220, 49, 871, 244 ]
+						"storage_rect" : [ 700, 388, 1317, 785 ]
 					}
 ,
 					"text" : "pattrstorage SVPsourcefilterPreset @savemode 2 @autowatch 1",
@@ -3740,8 +3781,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 0,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4369,6 +4410,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-99", 0 ],
 					"source" : [ "obj-105", 0 ]
 				}
@@ -4855,6 +4903,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -4901,6 +4956,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
 					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}

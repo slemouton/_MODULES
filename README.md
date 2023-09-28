@@ -23,6 +23,9 @@ Each module should
 
 ### todo
 - replace spat by spat5 (compressor, etc.)
+- make an overview
+- unit testing : make all help patches automatically testable
+- remake max for live devices
 
 ## Effects Overview
 ### Autowah
