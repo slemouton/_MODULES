@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
+			"major" : 8,
+			"minor" : 5,
 			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1212.0, 148.0, 325.0, 526.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 411.0, 383.0, 497.0, 526.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -36,44 +37,25 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"clipheight" : 85.0,
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "Patricia-2.aif",
-								"filekind" : "audiofile",
-								"selection" : [ 0.375, 0.846154 ],
-								"loop" : 1,
-								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formantcorrection" : [ 0 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"speed" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-77",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 18.0, 63.5, 207.0, 86.0 ],
-					"style" : ""
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-5",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "demosound.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 18.0, 46.0, 230.0, 99.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -86,7 +68,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.5, 282.0, 36.0, 18.0 ],
-					"style" : "",
 					"text" : "Open"
 				}
 
@@ -102,7 +83,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.5, 416.0, 133.0, 31.0 ],
-					"style" : "",
 					"text" : ";\r1gch.storage recall Test1"
 				}
 
@@ -116,7 +96,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.5, 398.0, 41.0, 18.0 ],
-					"style" : "",
 					"text" : "Preset"
 				}
 
@@ -130,7 +109,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.5, 337.0, 25.0, 18.0 ],
-					"style" : "",
 					"text" : "Init"
 				}
 
@@ -155,7 +133,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.5, 354.5, 109.0, 31.0 ],
-					"style" : "",
 					"text" : ";\r1gch.INIT bang",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -181,7 +158,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.5, 300.0, 109.0, 31.0 ],
-					"style" : "",
 					"text" : ";\r1gch.interface open",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -193,14 +169,14 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 422.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 18.0, 422.0, 45.0, 45.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
 					"numoutlets" : 5,
@@ -209,13 +185,13 @@
 					"patching_rect" : [ 18.0, 257.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
 							"parameter_initial" : [ 0.0 ],
+							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
-							"parameter_unitstyle" : 4,
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -235,7 +211,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 18.0, 188.0, 165.0, 31.0 ],
-					"style" : "",
 					"text" : "poly~ tg.GrooveChoir.2.2.Poly 1 args 1gch",
 					"varname" : "poly~"
 				}
@@ -273,92 +248,48 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-77", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-77", 0 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-1.1::obj-4::obj-24" : [ "DelayMax", "DelayMax", 0 ],
-			"obj-1.1::obj-4::obj-42" : [ "FilterMode", "FilterMode", 0 ],
-			"obj-1.1::obj-4::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
-			"obj-1.1::obj-4::obj-25" : [ "PitchMin", "PitchMin", 0 ],
-			"obj-1.1::obj-4::obj-14" : [ "Outgain", "Outgain", 0 ],
-			"obj-1.1::obj-4::obj-63" : [ "SpeedMax", "SpeedMax", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1.1::obj-4::obj-97" : [ "Fade", "Fade", 0 ],
-			"obj-1.1::obj-4::obj-65" : [ "SpeedMin", "SpeedMin", 0 ],
-			"obj-1.1::obj-4::obj-72" : [ "FilterQ", "FilterQ", 0 ],
-			"obj-1.1::obj-4::obj-18" : [ "Mode", "Mode", 0 ],
-			"obj-1.1::obj-4::obj-50" : [ "BufSize", "BufSize", 0 ],
-			"obj-1.1::obj-4::obj-67" : [ "FilterGain", "FilterGain", 0 ],
-			"obj-1.1::obj-4::obj-80" : [ "PRESET", "PRESET", 0 ],
-			"obj-1.1::obj-4::obj-26" : [ "Quality", "Quality", 0 ],
-			"obj-1.1::obj-4::obj-61" : [ "PitchMax", "PitchMax", 0 ],
 			"obj-1.1::obj-4::obj-12" : [ "Dry/wet", "Dry/wet", 0 ],
+			"obj-1.1::obj-4::obj-14" : [ "Outgain", "Outgain", 0 ],
+			"obj-1.1::obj-4::obj-18" : [ "Mode", "Mode", 0 ],
+			"obj-1.1::obj-4::obj-24" : [ "DelayMax", "DelayMax", 0 ],
+			"obj-1.1::obj-4::obj-25" : [ "PitchMin", "PitchMin", 0 ],
+			"obj-1.1::obj-4::obj-26" : [ "Quality", "Quality", 0 ],
+			"obj-1.1::obj-4::obj-42" : [ "FilterMode", "FilterMode", 0 ],
+			"obj-1.1::obj-4::obj-50" : [ "BufSize", "BufSize", 0 ],
+			"obj-1.1::obj-4::obj-61" : [ "PitchMax", "PitchMax", 0 ],
+			"obj-1.1::obj-4::obj-63" : [ "SpeedMax", "SpeedMax", 0 ],
+			"obj-1.1::obj-4::obj-65" : [ "SpeedMin", "SpeedMin", 0 ],
+			"obj-1.1::obj-4::obj-67" : [ "FilterGain", "FilterGain", 0 ],
+			"obj-1.1::obj-4::obj-70" : [ "FilterFreq", "FilterFreq", 0 ],
+			"obj-1.1::obj-4::obj-72" : [ "FilterQ", "FilterQ", 0 ],
 			"obj-1.1::obj-4::obj-76" : [ "NbVoices", "NbVoices", 0 ],
-			"obj-1.1::obj-4::obj-8" : [ "Ingain", "Ingain", 0 ]
+			"obj-1.1::obj-4::obj-8" : [ "Ingain", "Ingain", 0 ],
+			"obj-1.1::obj-4::obj-80" : [ "PRESET", "PRESET", 0 ],
+			"obj-1.1::obj-4::obj-97" : [ "Fade", "Fade", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-5::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-5::obj-35" : [ "[5]", "Level", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "tg.GrooveChoir.2.2.Poly.maxpat",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/GrooveChoir",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.MuteThispoly2.maxpat",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.GrooveChoir.1.2.maxpat",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/EFFECTS/GrooveChoir",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "M4L.bal2~.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GrooveChoirPreset.json",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/JSON",
-				"patcherrelativepath" : "../../../JSON",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.m.fgraph1.maxpat",
-				"bootpath" : "~/Dropbox/PATCH/_LIBRARY/TG.tools/_MODULES/CTRL",
-				"patcherrelativepath" : "../../CTRL",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grooveStretch.poly.maxpat",
-				"bootpath" : "~/Documents/PATCH/Manoury/KeinLicht/PATCHS/Choir",
-				"patcherrelativepath" : "../../../../../../../Documents/PATCH/Manoury/KeinLicht/PATCHS/Choir",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -369,10 +300,81 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Patricia-2.aif",
-				"bootpath" : "~/Dropbox/PATCH/MANOURY/KEINLICHT/CONCERT_PROJECT/media",
-				"patcherrelativepath" : "../../../../../MANOURY/KEINLICHT/CONCERT_PROJECT/media",
-				"type" : "AIFF",
+				"name" : "demosound.maxpat",
+				"bootpath" : "C74:/help/msp",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "grooveStretch.poly.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/GrooveChoir",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "interfacecolor.js",
+				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "saw.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sine.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square.svg",
+				"bootpath" : "C74:/media/max/picts/m4l-picts",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.GrooveChoir.1.2.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/GrooveChoir",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.GrooveChoir.2.2.Poly.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/GrooveChoir",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.MuteThispoly2.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.fgraph1.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"patcherrelativepath" : "../../CTRL",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -391,18 +393,18 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ],
-					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
-
+,
+					"fontface" : [ 1 ],
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 11.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -412,12 +414,12 @@
 				"name" : "Default Max7 Poletti",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
-						"proportion" : 0.39
+						"proportion" : 0.39,
+						"type" : "gradient"
 					}
 
 				}
