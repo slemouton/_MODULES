@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 751.0, 761.0 ],
+		"rect" : [ 188.0, 231.0, 751.0, 761.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 128.0, 406.0, 122.0, 31.0 ],
+					"text" : ";\r1Chro Chord 81 83"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -124,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 417.5, 121.0, 31.0 ],
+					"patching_rect" : [ 128.0, 442.5, 121.0, 31.0 ],
 					"text" : ";\r1Chro Flush 1"
 				}
 
@@ -344,7 +359,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 75.0, 316.0, 87.0 ],
+					"patching_rect" : [ 334.0, 660.0, 316.0, 87.0 ],
 					"text" : ";\r1Chro Chord 0 0 0, Dry/wet 100., Envelope -0.05, Feedback 33., FilterFreq 1000., FilterGain 0., FilterMode 5., FilterQ 0.3, Flush 0., ForceFilter 1., HarmModel 0., Harmonics 15., Ingain 0., InterpMode 0., InterpTime 1000., MaxDelay 2000., Outgain -127., PanL -50., PanR 50., Receive 1Chro.Notes, ReceiveChord 0., Shift 1., Stretch 2., Tune 440., Variance 0.5"
 				}
 
@@ -363,7 +378,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 5,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -875,6 +890,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "ChromaDelayPreset.json",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/EFFECTS/Chromax",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "M4L.bal2~.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Tools resources",
 				"type" : "JSON",
@@ -928,42 +950,42 @@
 			}
 , 			{
 				"name" : "tg.ChromaDelay.2.2.Poly.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/Chromax",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/EFFECTS/Chromax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ChromaDelay.2.2.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/Chromax",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/EFFECTS/Chromax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ChromaxDelay.gen.2.2.pfft.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/EFFECTS/Chromax",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/EFFECTS/Chromax",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.MuteThispoly2.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.fgraph1.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.m.preset.maxpat",
-				"bootpath" : "~/Desktop/_MODULES-master/CTRL",
+				"bootpath" : "~/Projets/MAXMSPStuff/Goepfer/_MODULES/CTRL",
 				"patcherrelativepath" : "../../CTRL",
 				"type" : "JSON",
 				"implicit" : 1

@@ -12,9 +12,6 @@ TG toolbox 2018 - Updated in 2023
 # Still not up to date
 - sn.compressor (missing external from Sebastien Naves)
 - Chromax (unknown error about pitch declaration)
-- Convolution (missing Pfft patch)
-- Freeze koala - Light (unknown error from jit.peek)
-- HarmX4 - (Missing Waveforms)
 - Spat - (update to spat 5 is ongoing, half is done)
 
 ## what is it ?

@@ -1,0 +1,28 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ConvolutionPreset",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "<(unnamed)>",
+				"data" : 				{
+					"Dry/wet" : [ 100.0 ],
+					"FilterFreq" : [ 1000.0 ],
+					"FilterGain" : [ 0.0 ],
+					"FilterMode" : [ 5.0 ],
+					"FilterQ" : [ 0.3 ],
+					"Ingain1" : [ 0.0 ],
+					"Ingain2" : [ 0.0 ],
+					"Morph" : [ 100.0 ],
+					"Outgain" : [ -3.565304336958019 ],
+					"ReceiveEnable" : [ 1.0 ],
+					"ReceiveSource2" : [ "none" ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
