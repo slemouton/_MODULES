@@ -503,11 +503,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-37",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 64.75, 23.0, 25.0, 25.0 ]
 				}
 
@@ -545,7 +545,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 244.25, 225.5, 56.0, 20.0 ],
+					"patching_rect" : [ 226.25, 221.5, 56.0, 20.0 ],
 					"text" : "cascade~"
 				}
 
@@ -2805,7 +2805,7 @@
 					"patching_rect" : [ 251.833313000000004, 455.667236000000003, 94.400002000000001, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 665.026733000000036, 2.163818, 91.0, 20.0 ],
-					"text" : "1DAC.7&8FILT"
+					"text" : "#1"
 				}
 
 			}
@@ -3109,7 +3109,7 @@
 				"box" : 				{
 					"comment" : "Parameters values, getattributes, getstate",
 					"id" : "obj-142",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3160,7 +3160,7 @@
 						"Bypass" : [ 0.0 ],
 						"BypassLim" : [ 0.0 ],
 						"Delay" : [ 0.0 ],
-						"Ingain" : [ 0.0 ],
+						"Ingain" : [ -29.166666666666671 ],
 						"Lookahead" : [ 10.000000000000004 ],
 						"Outgain" : [ 0.0 ],
 						"Release" : [ 50.000000000000021 ],
@@ -3189,7 +3189,7 @@
 				"box" : 				{
 					"comment" : "Dumpout",
 					"id" : "obj-145",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3239,7 +3239,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-36",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3251,7 +3251,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-35",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3263,11 +3263,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.750004000000001, 23.0, 25.0, 25.0 ]
 				}
 
@@ -3330,7 +3330,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 112.25, 151.5, 46.0, 63.0 ],
+					"patching_rect" : [ 112.25, 151.5, 184.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 30.0, 40.0, 136.0 ],
 					"prototypename" : "M4L.live.gain~.V.extended",
@@ -3386,6 +3386,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-180", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -4276,6 +4283,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-109", 1 ],
+					"order" : 1,
+					"source" : [ "obj-28", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-109", 0 ],
 					"order" : 1,
 					"source" : [ "obj-28", 0 ]
@@ -4293,6 +4308,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
+					"order" : 0,
 					"source" : [ "obj-28", 1 ]
 				}
 
@@ -4849,6 +4865,113 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-108" : [ "BypassLim[5]", "BypassLim", 0 ],
+			"obj-116" : [ "1filter[9]", "1filter", 0 ],
+			"obj-14" : [ "Outgain[11]", "Outgain", 0 ],
+			"obj-157" : [ "2filter[7]", "2filter", 0 ],
+			"obj-160" : [ "2mode[9]", "2mode", 0 ],
+			"obj-164" : [ "3filter[8]", "3filter", 0 ],
+			"obj-167" : [ "3mode[6]", "3mode", 0 ],
+			"obj-171" : [ "4filter[5]", "4filter", 0 ],
+			"obj-174" : [ "4mode[9]", "4mode", 0 ],
+			"obj-178" : [ "5filter[9]", "5filter", 0 ],
+			"obj-181" : [ "5mode[7]", "5mode", 0 ],
+			"obj-20" : [ "1mode[9]", "1mode", 0 ],
+			"obj-25" : [ "1gain[10]", "1gain", 0 ],
+			"obj-26" : [ "1freq[10]", "1freq", 0 ],
+			"obj-27" : [ "1q[9]", "1q", 0 ],
+			"obj-30" : [ "Bypass[24]", "Bypass", 0 ],
+			"obj-41" : [ "Threshold[9]", "Threshold", 0 ],
+			"obj-51" : [ "Delay[10]", "Delay", 0 ],
+			"obj-53" : [ "Lookahead[17]", "Lookahead", 0 ],
+			"obj-62" : [ "2gain[9]", "2gain", 0 ],
+			"obj-63" : [ "2freq[10]", "2freq", 0 ],
+			"obj-64" : [ "2q[9]", "2q", 0 ],
+			"obj-67" : [ "Release[17]", "Release", 0 ],
+			"obj-70" : [ "Attack[18]", "Attack", 0 ],
+			"obj-76" : [ "3gain[9]", "3gain", 0 ],
+			"obj-77" : [ "3freq[10]", "3freq", 0 ],
+			"obj-78" : [ "3q[9]", "3q", 0 ],
+			"obj-8" : [ "Ingain[30]", "Ingain", 0 ],
+			"obj-80" : [ "PRESET[24]", "PRESET", 0 ],
+			"obj-81" : [ "5freq[7]", "5freq", 0 ],
+			"obj-83" : [ "4freq[10]", "4freq", 0 ],
+			"obj-88" : [ "5gain[20]", "5gain", 0 ],
+			"obj-91" : [ "4gain[9]", "4gain", 0 ],
+			"obj-93" : [ "5q[5]", "5q", 0 ],
+			"obj-95" : [ "4q[19]", "4q", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "bandpass.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "highcut.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "highshelf.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lowcut.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lowshelf.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "notch.svg",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.delay~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "spat5.limiter~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tg.m.preset.maxpat",
+				"bootpath" : "~/My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/patchers",
+				"patcherrelativepath" : "../../../../../../My Drive/Gualandi/WeAreNotTheWaves/WeAreNot/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
